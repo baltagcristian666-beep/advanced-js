@@ -1,0 +1,43 @@
+/*
+Arrow function expressions
+
+() => expression
+
+param => expression
+
+(param) => expression
+
+(param1, paramN) => expression
+
+() => {
+  statements
+}
+
+param => {
+  statements
+}
+
+(param1, paramN) => {
+  statements
+}
+
+Are not hoisted. Must be assinged to a variable to be able to call them.
+*/
+/*
+Rest parameters
+
+function f(a, b, ...theArgs) {
+  // …
+}
+
+Rest is an array that saves all bonus arguments.
+*/
+/*
+Default parameters
+
+function multiply(a, b = 1) {
+  return a * b;
+}
+
+Is used to set a default value to a parameter. 
+*/
