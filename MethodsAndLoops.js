@@ -40,6 +40,7 @@ The return value for all elements can be adjusted inside the function.
 /*
 Array.prototype.reduce()
 
+
 reduce(callbackFn)
 reduce(callbackFn, initialValue)
 
