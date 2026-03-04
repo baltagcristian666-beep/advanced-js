@@ -25,13 +25,6 @@ its right side operand when its left side operand is null or
 undefined, otherwise returns its left side operand.
 */
 /*
-Nullish coalescing operator (??)
-
-The nullish coalescing (??) operator is a logical operator that returns 
-its right side operand when its left side operand is null or 
-undefined, otherwise returns its left side operand.
-*/
-/*
 Optional chaining (?.)
 
 const adventurer = {
