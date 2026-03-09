@@ -1,14 +1,22 @@
+/*
+Used to create and return multiple object.
+Classes are shared by default.
+Uses extends / super for inheritance.
+Must create a new instance, othewise this
+might point to the wrong context.
+*/
 
 
 
 
 
-
-// const gamer = {
-//     name: 'Dave',
-//     score: 0,
-//     incrementScore: function(){
-//         this.score++   
+// function gamer(name, score) {
+//     return {
+//         name,
+//         score,
+//         incrementScore() {
+//             this.score++
+//         }
 //     }
 // }
 

@@ -1,4 +1,10 @@
-
+/*
+Used to create and return multiple object.
+Has inheritance.
+Must create a new instance, othewise this
+might point to the wrong context.
+Classes are better.
+*/
 
 
 
