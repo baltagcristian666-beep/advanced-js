@@ -52,5 +52,10 @@ console.log(safari.destination)
 //Tanzania
 
 /*
-Used to get and set the value of the private propertie.
+Are used instead of a normal method when the methon doesn't receive arguments.
+Must be kep simple:
+1.
+Get must only return the value of the propertie.
+2.
+Set must only validate the state of the propertie, check it's value. 
 */
