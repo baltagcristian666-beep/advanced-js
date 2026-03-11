@@ -16,7 +16,9 @@ console.log(userObj.prop)
 
 console.log(canAccessPremiumFeature(user1, 'accessPremiumFeature'))
 
-[] is used when the key is a variable which can change.
+An object keys can only be strings or symbols.
+[] is used when the key is a variable which can change(nu atribui diirect
+ o cheie ci foloseste o variabila)
 . us used when the key is the one inside the object. 
 */
 
