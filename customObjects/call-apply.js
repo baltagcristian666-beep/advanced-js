@@ -47,5 +47,5 @@ const politician1 = {
 displayPolitician.apply(politician1, ['In jail for corruption'])
 
 /*
-Used insted of call() when the sescond argument is an array.
+Used insted of call() when the second argument is an array.
 */
