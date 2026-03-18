@@ -31,6 +31,38 @@ at specific time intervals ignoring the aditional calls.
 
 //Debouncing
 
+function debounce(func, delay) {
+ 
+
+let throttleTimeout = null
+
+    return function ret(...args) {
+       
+        console.log(throttleTimeout)
+       if(!throttleTimeout) {
+                throttleTimeout = setTimeout(()=> {
+                throttleTimeout = null
+                func(...args)
+           }, delay)
+           //console.log(throttleTimeout)
+           
+       } else if (throttleTimeout){
+        clearTimeout(throttleTimeout)
+        throttleTimeout = null
+        ret(...args)
+       }
+    }
+
+
+
+}
+ 
+function handleInput(e) {
+   // console.log({...e})
+    console.log('Input detected from element with id ' + e.target.id)
+}
+const deb = debounce(handleInput, 1000)
+document.getElementById('name-input').addEventListener('input', deb)
 
 /*
 Purpose: Verifies that a function is called only after a certain period has passed since
@@ -47,3 +79,7 @@ is called and keeps ticking until it ends, then the function can run again. For
 debouncing the timer resets every time the function is called and the function can
 be executed again only when the the timer ends. 
 */
+
+
+
+
