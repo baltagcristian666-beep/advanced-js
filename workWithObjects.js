@@ -1,20 +1,18 @@
 /*
 [] and . after object
+ !!!!!! Daca folosesti obj.key -> in obj se va cauta elementul key
+ !!!!!! Daca folosesti obj[key] -> innn obj se va cauta valoarea lui key
+ !!!!!! Variabila key contine un string daca nu e de alt tip
 
-const user1 = {
-  username: "rpchan",
-  subscriptionLevel: "bronze",
-  accessPremiumFeature: false
-}
+const masina = {
+    marca: "Dacia",
+    model: "Logan"
+};
 
-function canAccessPremiumFeature(userObj, prop) {
-console.log(userObj[prop])
-// false
-console.log(userObj.prop)
-//undefined
-}
+let proprietate = "marca";
 
-console.log(canAccessPremiumFeature(user1, 'accessPremiumFeature'))
+console.log(masina.proprietate);  // undefined (caută literal cheia "proprietate")
+console.log(masina[proprietate]); // "Dacia" (evaluează variabila: masina["marca"])
 
 An object keys can only be strings or symbols.
 [] is used when the key is a variable which can change(nu atribui diirect
@@ -181,7 +179,7 @@ this
 const product = {
     name: 'Vanilla Lip Gloss',
     getProductInfo: function() {
-        console.log(this)
+        [console.log(this)]
     }
         getProductData: ()=> {
         console.log(this)

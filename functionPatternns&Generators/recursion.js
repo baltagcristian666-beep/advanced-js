@@ -1,4 +1,5 @@
 //Recursion
+//!!! With recursionn we take a step deeper at each call.
 
 let str = 'SCRIMBA'
 //console.log(str.slice(1))
